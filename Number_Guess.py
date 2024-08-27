@@ -38,18 +38,15 @@ while guess_no < chances:
     if ( (guess < lower_bound) or (guess > upper_bound) ):
 
         print(f"Out of bounds please guess within range {lower_bound} to {upper_bound} \n")
-        #guess = getint(input("Guess again: \n"))
 
     elif guess > answer:
         
         print("Guess was too high ;) \n")
-        #guess = getint(input("Guess again: \n"))
         guess_no += 1
     
     elif guess < answer:
         
         print("Guess was too low ;) \n")
-        #guess = getint(input("Guess again: \n"))
         guess_no += 1
 
     elif guess == answer:
